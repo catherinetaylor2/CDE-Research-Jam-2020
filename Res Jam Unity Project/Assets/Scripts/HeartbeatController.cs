@@ -83,15 +83,15 @@ public class HeartbeatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        flatLineLength = 400f / (float)heartRate;
+        flatLineLength = 400f / ((float)heartRate+Random.Range(-5,5));
         if(!beatFlag)
             StartCoroutine("Beat");
     }
 
     IEnumerator Beat() {
         beatFlag = true;
-        heartRateText.text = heartRate.ToString();
-        tempText.text = temperature.ToString();
+        heartRateText.text = (heartRate+Random.Range(-2,2)).ToString();
+        tempText.text = (temperature+Random.Range(-1,1)).ToString();
         if(curPosition >= maxPoints) {
             curPosition = 0;
             curX = 0;
