@@ -10,8 +10,11 @@ public class HeartbeatController : MonoBehaviour
     public UILineRenderer UILineRenderer;
 
     public GameObject positionObj;
+    private Vector2 referencePos;
 
     public Text heartRateText;
+
+    public Text tempText;
 
     public Color lineColour;
 
@@ -23,6 +26,8 @@ public class HeartbeatController : MonoBehaviour
     public int resolution;
 
     public int heartRate;
+
+    public float temperature;
 
     public float flatLineLength;
     private List<Vector2> points;
@@ -71,6 +76,7 @@ public class HeartbeatController : MonoBehaviour
         for(int i = 0 ; i < maxPoints ; i++ ){
             points.Add(new Vector2(i/3f,0));
         }
+        referencePos = positionObj.GetComponent<RectTransform>().localPosition;
 
     }
 
@@ -85,7 +91,7 @@ public class HeartbeatController : MonoBehaviour
     IEnumerator Beat() {
         beatFlag = true;
         heartRateText.text = heartRate.ToString();
-
+        tempText.text = temperature.ToString();
         if(curPosition >= maxPoints) {
             curPosition = 0;
             curX = 0;
@@ -113,7 +119,7 @@ public class HeartbeatController : MonoBehaviour
         }
         
         RectTransform blipTransform = positionObj.GetComponent<RectTransform>();
-        blipTransform.localPosition = new Vector2(points[curPosition].x,points[curPosition].y);                
+        blipTransform.localPosition = new Vector2(points[curPosition].x,points[curPosition].y)+referencePos;                
         curPosition++;
 
         if(currentFlatLength >= flatLineLength) {
