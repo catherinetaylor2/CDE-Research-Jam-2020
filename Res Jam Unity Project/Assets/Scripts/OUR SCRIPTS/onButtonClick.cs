@@ -11,14 +11,15 @@ public class onButtonClick : MonoBehaviour
 
     public Button button1;
     public GameObject cam;
+    ARCameraManager arCam;
 
     // Start is called before the first frame update
     void Start()
     {
-        var arCam = cam.GetComponent<ARCameraManager>();
-        print(arCam == null);
-        arCam.requestedFacingDirection = CameraFacingDirection.World;
-        print(arCam.requestedFacingDirection);
+        arCam = cam.GetComponent<ARCameraManager>();
+        // print(arCam == null);
+        // arCam.requestedFacingDirection = CameraFacingDirection.World;
+        // print(arCam.requestedFacingDirection);
     }
 
     // Update is called once per frame
@@ -37,7 +38,8 @@ public class onButtonClick : MonoBehaviour
         if (buttonPressed == button1)
         {
             Debug.Log("Clicked: " + button1.name);
-             SceneManager.LoadScene("PlaceObject", LoadSceneMode.Additive);
+            // arCam.requestedFacingDirection = CameraFacingDirection.World;
+             SceneManager.LoadScene("PlaceObject", LoadSceneMode.Single);
         }
 
     }
