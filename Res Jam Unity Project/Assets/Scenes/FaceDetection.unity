@@ -170,7 +170,7 @@ MonoBehaviour:
   lineWidth: 2.2
   resolution: 1
   heartRate: 70
-  temperature: 0
+  temperature: 37.5
   flatLineLength: 5
 --- !u!4 &157998177
 Transform:
