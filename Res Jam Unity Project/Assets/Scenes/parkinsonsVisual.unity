@@ -138,6 +138,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f67cf83319af64ebfa25a78649036793, type: 2}
+    - target: {fileID: -4816105440292430972, guid: 68dfd533f5f70e342bb187019034578d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,11 +223,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brain_Model_fMRI
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 68dfd533f5f70e342bb187019034578d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -95758598127446479, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f67cf83319af64ebfa25a78649036793, type: 2}
+    - target: {fileID: 6964620716296126, guid: 68dfd533f5f70e342bb187019034578d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3134220212735352525, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -245,7 +259,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.89
+      value: 45.990517
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
@@ -255,7 +269,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -145.72
+      value: -145.60413
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
@@ -280,7 +294,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 68dfd533f5f70e342bb187019034578d,
         type: 3}
@@ -316,6 +330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brain_Model
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 68dfd533f5f70e342bb187019034578d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68dfd533f5f70e342bb187019034578d, type: 3}
@@ -609,7 +628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621808948 stripped
 GameObject:
@@ -716,3 +735,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -3.4840002, z: 0}
+--- !u!1 &1824989354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4816105440292430972, guid: 68dfd533f5f70e342bb187019034578d,
+    type: 3}
+  m_PrefabInstance: {fileID: 298930681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824989358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824989354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793d0478d10f44fd8a1417b498b4b563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 7367252836194769423, guid: 68dfd533f5f70e342bb187019034578d,
+    type: 3}
+  material2: {fileID: 2100000, guid: f67cf83319af64ebfa25a78649036793, type: 2}
