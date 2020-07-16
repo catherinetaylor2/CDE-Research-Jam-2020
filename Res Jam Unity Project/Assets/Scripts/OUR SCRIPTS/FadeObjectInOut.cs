@@ -143,17 +143,17 @@ public class FadeObjectInOut : MonoBehaviour
  
  
 	// These are for testing only. 
-//		void Update()
-//		{
-//			if (Input.GetKeyDown (KeyCode.A) )
-//			{
-//				FadeIn();
-//			}
-//			if (Input.GetKeyDown (KeyCode.S) )
-//			{
-//				FadeOut(); 
-//			}
-//		}
+		void Update()
+		{
+			if (Input.GetKeyDown (KeyCode.A) )
+			{
+				FadeIn();
+			}
+			if (Input.GetKeyDown (KeyCode.S) )
+			{
+				FadeOut(); 
+			}
+		}
  
  
 }
