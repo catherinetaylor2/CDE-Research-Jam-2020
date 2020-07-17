@@ -9,3 +9,4 @@ How to use:
   4. Brain will be placed on detected planes - once happy with position press button and position will be fixed
 
 
+![Alt text](/Research images/inside_brain.jpg?raw=true "Optional Title")
