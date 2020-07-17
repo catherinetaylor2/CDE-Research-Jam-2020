@@ -9,4 +9,7 @@ How to use:
   4. Brain will be placed on detected planes - once happy with position press button and position will be fixed
   
   
-![inside_brain_small](https://user-images.githubusercontent.com/25514442/87780079-d91b1f80-c825-11ea-8974-54750a32ca3e.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/25514442/87780079-d91b1f80-c825-11ea-8974-54750a32ca3e.png">
+  </p>
