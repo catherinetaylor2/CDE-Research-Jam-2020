@@ -10,10 +10,11 @@ public class fMRI_off : MonoBehaviour
 	public GameObject brain1_1, brain1_2, brain1_3, brain1_4, brain1_5, brain1_6;
     public Button button1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    private activeData active_data;
 
+    // Start is called before the first frame update
+    void Start(){
+        active_data = FindObjectOfType<activeData>();
     }
 
     // Update is called once per frame
@@ -24,20 +25,23 @@ public class fMRI_off : MonoBehaviour
 
     void test()
     {
+
+        active_data.setOff();
+
         brain1.SetActive(false);
-	brain2.SetActive(false);
-	brain3.SetActive(false);
-	brain4.SetActive(false);
-	brain5.SetActive(false);
-	brain6.SetActive(false);
-	activeRegion1.SetActive(false);
-	activeRegion2.SetActive(false);
-	brain1_1.SetActive(true);
-	brain1_2.SetActive(true);
-	brain1_3.SetActive(true);
-	brain1_4.SetActive(true);
-	brain1_5.SetActive(true);
-	brain1_6.SetActive(true);
+        brain2.SetActive(false);
+        brain3.SetActive(false);
+        brain4.SetActive(false);
+        brain5.SetActive(false);
+        brain6.SetActive(false);
+        activeRegion1.SetActive(false);
+        activeRegion2.SetActive(false);
+        brain1_1.SetActive(true);
+        brain1_2.SetActive(true);
+        brain1_3.SetActive(true);
+        brain1_4.SetActive(true);
+        brain1_5.SetActive(true);
+        brain1_6.SetActive(true);
     }
 
 }
