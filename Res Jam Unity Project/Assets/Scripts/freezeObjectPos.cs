@@ -7,9 +7,11 @@ public class freezeObjectPos : MonoBehaviour
 {
     ARPlaceObject placeObj;
     public Button button1;
+    public GameObject interactionButtons;
     // Start is called before the first frame update
     void Start(){
         placeObj = FindObjectOfType<ARPlaceObject>();
+        interactionButtons.SetActive(false);
     }
 
 
@@ -26,6 +28,8 @@ public class freezeObjectPos : MonoBehaviour
         {
             Debug.Log("Clicked: " + button1.name);
             placeObj.isPlaced();
+            interactionButtons.SetActive(true);
+            gameObject.SetActive(false);
         }
 
     }
