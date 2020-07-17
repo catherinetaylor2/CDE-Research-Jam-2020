@@ -8,11 +8,16 @@ public class destroy : MonoBehaviour
 
     public Button button1;
 	public GameObject buttonBye;
+    public GameObject buttonOn;
+    public GameObject buttonOff;
+    public GameObject downloadPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        buttonOn.SetActive(false);
+        buttonOff.SetActive(false);
+        downloadPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +30,9 @@ public class destroy : MonoBehaviour
 
 {
 	buttonBye.SetActive(false);
+    buttonOn.SetActive(true);
+    buttonOff.SetActive(true);
+    downloadPanel.SetActive(true);
 }
 
 }
