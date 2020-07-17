@@ -7,9 +7,6 @@ How to use:
   2. FaceDetection allows you to see brain overlayed
   3. Press button to swap to other scene
   4. Brain will be placed on detected planes - once happy with position press button and position will be fixed
-
-
-
-<div align="center">
-    <img src="Research images/inside_brain.png width="400px"</img> 
-</div>
+  
+  
+![inside_brain_small](https://user-images.githubusercontent.com/25514442/87780079-d91b1f80-c825-11ea-8974-54750a32ca3e.png)
