@@ -11,5 +11,5 @@ How to use:
 
 
 <div align="center">
-    <img src="Research images/inside_brain.JPG width="400px"</img> 
+    <img src="Research images/inside_brain.png width="400px"</img> 
 </div>
